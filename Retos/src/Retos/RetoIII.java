@@ -14,14 +14,15 @@ public class RetoIII {
         // Instanciamos la clase Scanner
         Scanner leer = new Scanner(System.in);
 
-        // Instanciamos la clase Random
+        // Instanciamos el metodo Random 
         Random elegir = new Random();
-        // Creamos la variable eleccion y utilizamos el metodo random
+        // Asignamos la variable eleccion utilizando el metodo random
         int moneda = elegir.nextInt(2);
 
-        // Solicitamos la elección
+        //Reglas de juego
         System.out.println("¡Jugaremos carisellazo!");
         System.out.println("Si su elección coincide con la del programa gana, si no, pierde.");
+        // Solicitamos la elección
         System.out.println("En este momento la moneda esta en el aire \n Elija 0.Cara o 1.Sello");
         // Capturamos la elección
         eleccion = leer.nextInt();

@@ -9,7 +9,8 @@ public class RetoI {
     centi=(temp=32)/1.8;
 
     //Mostrar resultados 
-    System.out.println("La temperatura para precalentar el horno es: "+centi);
+    System.out.println("La temperatura para precalentar el horno es: "+centi);  
+
 
 
 }

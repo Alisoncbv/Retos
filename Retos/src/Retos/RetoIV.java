@@ -13,8 +13,9 @@ public class RetoIV {
         // Instanciamos la clase Scanner
         Scanner leer = new Scanner(System.in);
 
-        // Instanciamos la clase Random
+        // Instanciamos el metodo Random
         Random elegir = new Random();
+        //Asignamos la variable 
         int juego = elegir.nextInt(3);
 
         // Solicitamos la elección del usuario
@@ -25,7 +26,8 @@ public class RetoIV {
         eleccion = leer.nextInt();
 
         if (eleccion < 0 || eleccion > 2) {
-            System.out.println("No es una opción validad");
+            System.out.println("No es una opción valida");
+            //Finalizar el if
             return;
         }
 
@@ -33,6 +35,7 @@ public class RetoIV {
             System.out.println("Usted saco: " + eleccion);
             System.out.println("El programa saco: " + juego);
             System.out.println("El programa y usted sacaron lo mismo, fue empate");
+        
         } else if (eleccion == 0 && juego == 1) {
             System.out.println("Usted saco: " + eleccion);
             System.out.println("El programa saco: " + juego);
@@ -53,7 +56,7 @@ public class RetoIV {
             System.out.println("El programa saco: " + juego);
             System.out.println("Lo sentimos usted perdió");
 
-        } else if (eleccion == 2 && juego == 0) {
+        } else if (eleccion == 2 && juego == 0)   {
             System.out.println("Usted saco: " + eleccion);
             System.out.println("El programa saco: " + juego);
             System.out.println("Lo sentimos usted perdió");
@@ -71,3 +74,4 @@ public class RetoIV {
 
     }
 }
+
